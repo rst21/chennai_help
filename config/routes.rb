@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'post/index'
+
   resources :posts
 
   devise_for :admin_users, ActiveAdmin::Devise.config
