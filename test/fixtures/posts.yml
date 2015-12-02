@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  timestamp: 2015-12-02 07:03:35
+  accomodation_place: MyString
+  no_of_people: 1
+  twitter_handle_or_facebook_profile: MyText
+  mobile_number: 1
+  source_link: MyString
+
+two:
+  timestamp: 2015-12-02 07:03:35
+  accomodation_place: MyString
+  no_of_people: 1
+  twitter_handle_or_facebook_profile: MyText
+  mobile_number: 1
+  source_link: MyString
