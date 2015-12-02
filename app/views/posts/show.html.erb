@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Timestamp:</strong>
+  <%= @post.timestamp %>
+</p>
+
+<p>
+  <strong>Accomodation place:</strong>
+  <%= @post.accomodation_place %>
+</p>
+
+<p>
+  <strong>No of people:</strong>
+  <%= @post.no_of_people %>
+</p>
+
+<p>
+  <strong>Twitter handle or facebook profile:</strong>
+  <%= @post.twitter_handle_or_facebook_profile %>
+</p>
+
+<p>
+  <strong>Mobile number:</strong>
+  <%= @post.mobile_number %>
+</p>
+
+<p>
+  <strong>Source link:</strong>
+  <%= @post.source_link %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

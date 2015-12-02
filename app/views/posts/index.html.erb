@@ -1,0 +1,35 @@
+<h1>Listing posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Timestamp</th>
+      <th>Accomodation place</th>
+      <th>No of people</th>
+      <th>Twitter handle or facebook profile</th>
+      <th>Mobile number</th>
+      <th>Source link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.timestamp %></td>
+        <td><%= post.accomodation_place %></td>
+        <td><%= post.no_of_people %></td>
+        <td><%= post.twitter_handle_or_facebook_profile %></td>
+        <td><%= post.mobile_number %></td>
+        <td><%= post.source_link %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
